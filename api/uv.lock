@@ -2,10 +2,10 @@ version = 1
 revision = 3
 requires-python = ">=3.11, <3.13"
 resolution-markers = [
-    "python_full_version >= '3.12' and sys_platform == 'win32'",
     "python_full_version >= '3.12' and sys_platform != 'win32'",
-    "python_full_version < '3.12' and sys_platform == 'win32'",
+    "python_full_version >= '3.12' and sys_platform == 'win32'",
     "python_full_version < '3.12' and sys_platform != 'win32'",
+    "python_full_version < '3.12' and sys_platform == 'win32'",
 ]
 
 [manifest]
@@ -4447,7 +4447,7 @@ wheels = [
 [[package]]
 name = "prowler"
 version = "5.31.0"
-source = { git = "https://github.com/prowler-cloud/prowler.git?rev=master#b5bb85c9564f6ca6a7f66c851bb56bde719205ee" }
+source = { git = "https://github.com/prowler-cloud/prowler.git?rev=master#e1f20487ce7abbca4911daf16ac72763d94d97a9" }
 dependencies = [
     { name = "alibabacloud-actiontrail20200706" },
     { name = "alibabacloud-credentials" },
